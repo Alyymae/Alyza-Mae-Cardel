@@ -95,6 +95,7 @@
     <Compile Include="contact_details.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CsvHelper\CsvReader.vb" />
     <Compile Include="Login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +149,12 @@
     <Compile Include="status.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="uplddata.Designer.vb">
+      <DependentUpon>uplddata.vb</DependentUpon>
+    </Compile>
+    <Compile Include="uplddata.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Choices.resx">
@@ -182,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="status.resx">
       <DependentUpon>status.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uplddata.resx">
+      <DependentUpon>uplddata.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

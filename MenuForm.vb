@@ -13,4 +13,10 @@
         Login.Show()
         Hide()
     End Sub
+
+    Private Sub backup_Click(sender As Object, e As EventArgs) Handles backup.Click
+        Dim retval
+        retval = Shell("C:\Users\alyza\backupfunction.bat", 1)
+        MessageBox.Show("Backup Successfully!")
+    End Sub
 End Class

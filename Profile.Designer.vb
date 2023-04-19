@@ -35,6 +35,8 @@ Partial Class Profile
         Me.ButtonCancel = New System.Windows.Forms.Button()
         Me.ButtonHome = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.upload = New System.Windows.Forms.Button()
+        Me.FolderBrowserDialog1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.SuspendLayout()
         '
         'ButtonAdd
@@ -132,7 +134,7 @@ Partial Class Profile
         'ButtonCancel
         '
         Me.ButtonCancel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonCancel.Location = New System.Drawing.Point(90, 353)
+        Me.ButtonCancel.Location = New System.Drawing.Point(90, 397)
         Me.ButtonCancel.Name = "ButtonCancel"
         Me.ButtonCancel.Size = New System.Drawing.Size(249, 39)
         Me.ButtonCancel.TabIndex = 10
@@ -159,12 +161,23 @@ Partial Class Profile
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'upload
+        '
+        Me.upload.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.upload.Location = New System.Drawing.Point(90, 352)
+        Me.upload.Name = "upload"
+        Me.upload.Size = New System.Drawing.Size(249, 39)
+        Me.upload.TabIndex = 13
+        Me.upload.Text = "Upload Record"
+        Me.upload.UseVisualStyleBackColor = True
+        '
         'Profile
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(442, 407)
+        Me.ClientSize = New System.Drawing.Size(442, 463)
+        Me.Controls.Add(Me.upload)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonHome)
         Me.Controls.Add(Me.ButtonCancel)
@@ -198,4 +211,6 @@ Partial Class Profile
     Friend WithEvents ButtonCancel As Button
     Friend WithEvents ButtonHome As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents upload As Button
+    Friend WithEvents FolderBrowserDialog1 As FolderBrowserDialog
 End Class

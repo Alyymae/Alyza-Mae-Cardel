@@ -3,6 +3,13 @@ Module Module1
     Public myconn As New MySql.Data.MySqlClient.MySqlConnection
     Public myConnectionString As String
     Public strSQL As String
+    Public cmd As MySqlCommand
+    Public da As MySqlDataAdapter
+    Public dt As DataTable
+
+
+
+
 
     Public Sub Connect_to_DB()
         myConnectionString = "server=127.0.0.1;" _

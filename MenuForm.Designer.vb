@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class MenuForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,17 +20,18 @@ Partial Class MenuForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ButtonAddrecord = New System.Windows.Forms.Button()
         Me.ButtonLoad = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.backup = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ButtonAddrecord
         '
         Me.ButtonAddrecord.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonAddrecord.Location = New System.Drawing.Point(106, 89)
+        Me.ButtonAddrecord.Location = New System.Drawing.Point(106, 64)
         Me.ButtonAddrecord.Name = "ButtonAddrecord"
         Me.ButtonAddrecord.Size = New System.Drawing.Size(176, 35)
         Me.ButtonAddrecord.TabIndex = 0
@@ -40,7 +41,7 @@ Partial Class MenuForm
         'ButtonLoad
         '
         Me.ButtonLoad.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ButtonLoad.Location = New System.Drawing.Point(106, 153)
+        Me.ButtonLoad.Location = New System.Drawing.Point(106, 114)
         Me.ButtonLoad.Name = "ButtonLoad"
         Me.ButtonLoad.Size = New System.Drawing.Size(176, 35)
         Me.ButtonLoad.TabIndex = 1
@@ -60,12 +61,23 @@ Partial Class MenuForm
         Me.Button1.Text = "Log out"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'backup
+        '
+        Me.backup.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.backup.Location = New System.Drawing.Point(106, 166)
+        Me.backup.Name = "backup"
+        Me.backup.Size = New System.Drawing.Size(176, 35)
+        Me.backup.TabIndex = 3
+        Me.backup.Text = "Backup Data"
+        Me.backup.UseVisualStyleBackColor = True
+        '
         'MenuForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(405, 265)
+        Me.Controls.Add(Me.backup)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ButtonLoad)
         Me.Controls.Add(Me.ButtonAddrecord)
@@ -78,4 +90,5 @@ Partial Class MenuForm
     Friend WithEvents ButtonAddrecord As Button
     Friend WithEvents ButtonLoad As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents backup As Button
 End Class

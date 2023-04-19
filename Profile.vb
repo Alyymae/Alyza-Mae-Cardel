@@ -49,4 +49,9 @@ Public Class Profile
         Choices.Show()
         Hide()
     End Sub
+
+    Private Sub upload_Click(sender As Object, e As EventArgs) Handles upload.Click
+        uplddata.Show()
+        Hide()
+    End Sub
 End Class
